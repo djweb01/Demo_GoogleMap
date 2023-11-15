@@ -1,4 +1,4 @@
-# Discription
+## Discription
 
 A web page demo based on Google Maps APIs. The functions include:
 
@@ -50,9 +50,13 @@ npm run build
 
 ## Dependencies Version Info
 "vue": "^2.5.11",
+
 "@googlemaps/js-api-loader": "^1.16.2",
+
 "axios": "^1.2.1",
+
 "bootstrap": "^5.3.2",
+
 "nanoid": "^5.0.3",
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
