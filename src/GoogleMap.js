@@ -15,7 +15,7 @@ export function useGeolocation() {
             console.log(error)
           }
         )
-      };
+      }
     })
     onUnmounted(() => {
       if (watcher) {navigator.geolocation.clearWatch(watcher)}
