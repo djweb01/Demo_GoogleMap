@@ -10,7 +10,7 @@ A web page demo based on Google Maps APIs. The functions include:
 
 4. Display the time zone and local time
 
-6. List up all search results with a pagination to allow 10 records maximum on each page
+6. List up all searching results with a pagination to allow 10 records maximum on each page
 
 6. Delete all selected records from the list
 
