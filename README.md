@@ -20,7 +20,7 @@ A web page demo based on Google Maps APIs. The functions include:
    #### Maps JavaScript API
    #### Geocoding API
    #### Time Zone API
-2. Please make sure that the location access is allowed in your browser.
+2. Please make sure that location access is allowed in your browser.
    
 3. Please enter your Google_Maps_AIP_key on the front page or save it in the App.vue file at
 ``` bash
@@ -49,7 +49,8 @@ npm run dev
 npm run build
 ```
 ## The Front Page View
-
+![Image text](https://github.com/djweb01/Demo_GoogleMap/blob/main/Front_page1.png)
+![Image text](https://github.com/djweb01/Demo_GoogleMap/blob/main/Front_page2.png)
 
 ## Dependencies Version Info
 "vue": "^2.5.11",
