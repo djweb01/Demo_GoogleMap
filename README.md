@@ -1,6 +1,6 @@
 ## Discription
 
-A web page demo based on Google Maps APIs. The functions include:
+A web page demo based on Google Maps APIs. Functions include:
 
 1. Acquire my current location 
 
