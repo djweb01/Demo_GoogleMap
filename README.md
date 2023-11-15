@@ -20,8 +20,9 @@ A web page demo based on Google Maps APIs. The functions include:
    #### Maps JavaScript API
    #### Geocoding API
    #### Time Zone API
-
-2. Please enter your Google_Maps_AIP_key on the front page or save it in the App.vue file at
+2. Please make sure that the location access is allowed in your browser.
+   
+3. Please enter your Google_Maps_AIP_key on the front page or save it in the App.vue file at
 ``` bash
 newLocationInfo:{
   ...
@@ -47,6 +48,8 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+## The Front Page View
+
 
 ## Dependencies Version Info
 "vue": "^2.5.11",
