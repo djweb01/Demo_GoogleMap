@@ -32,6 +32,7 @@
     
     data () {
       var addressList=[]
+      const MaxNumRecords = 10
       return {
         myLocationInfo:{
           address:'',
@@ -53,7 +54,7 @@
           achivemytimeZone: false,
         },
         addressList,
-        paginationSettings:{display: 5, current: 1,startNum:0, endNum: addressList.length >5 ? 5: addressList.length},
+        paginationSettings:{display: MaxNumRecords, current: 1,startNum:0, endNum: addressList.length >MaxNumRecords ? MaxNumRecords: addressList.length},
         GoMapRequest:{
           urlA : "https://maps.googleapis.com/maps/api/geocode/json?latlng=",
           key:"",
@@ -135,12 +136,10 @@
               console.log(error);
             }
           }
-          
         })
         .catch( (err) =>{  
           this.myLocationInfo.address = 'Please try again'
           console.log(err);
-          
         }); 
       },
 
@@ -170,12 +169,10 @@
               console.log(error);
             }
           }
-          
         })
         .catch( (err) =>{  
           alert('Error: ' +error)
           console.log(err);
-          
         }); 
       },
 
@@ -200,9 +197,7 @@
           })
           .catch( (err) =>{  
             console.log(err);
-            
           }); 
-        
       },
 
       getLocalTime(timeZoneId,target){
@@ -210,12 +205,10 @@
         axios.get(url)
           .then((response) => {
             target.LocalTime = (response.data.datetime).split('.')[0].replace('T',' ')
-            
             target.achivemytimeZone=true
           })
           .catch( (err) =>{  
             console.log(err);
-            
           }); 
       },
 
@@ -250,8 +243,6 @@
       },
         immediate: true
     }
-
-
   }
 
 </script>
